@@ -1,0 +1,21 @@
+export type PortfolioProject = {
+  id: string;
+  title: string;
+  slug: string;
+  shortDescription: string;
+  description: string | null;
+  client: string | null;
+  category: string;
+  technologies: string[];
+  coverImage: string | null;
+  gallery: string[];
+  liveUrl: string | null;
+  githubUrl: string | null;
+  challenges: string | null;
+  contribution: string | null;
+  completionDate: Date | null;
+  featured: boolean;
+  published: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+};

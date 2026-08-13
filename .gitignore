@@ -1,0 +1,26 @@
+node_modules
+.next
+.vercel
+out
+coverage
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local databases and generated uploads
+*.db
+*.db-journal
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Logs and local test artifacts
+*.log
+.auth-test*
+.DS_Store
+Thumbs.db
