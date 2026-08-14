@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/logo";
 
 const links = [
-  ["Agence", "/#agence"], ["Services", "/#services"], ["Projets", "/projects"], ["Équipe", "/#equipe"], ["Contact", "/#contact"],
+  ["Agence", "/#agence"], ["Services", "/#services"], ["Offres", "/#offres"], ["Projets", "/projects"], ["Équipe", "/#equipe"], ["Contact", "/#contact"],
 ];
 
 export function Navbar() {

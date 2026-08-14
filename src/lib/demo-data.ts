@@ -1,4 +1,4 @@
-import type { PortfolioProject } from "@/lib/types";
+import type { PortfolioProject, TeamMember } from "@/lib/types";
 
 const now = new Date("2025-01-01");
 
@@ -32,5 +32,44 @@ export const demoProjects: PortfolioProject[] = [
     challenges: "Créer une signature reconnaissable dans un flux très concurrentiel.",
     contribution: "Stratégie éditoriale, design social et accompagnement.",
     completionDate: new Date("2025-05-01"), featured: true, published: true, createdAt: now, updatedAt: now,
+  },
+];
+
+export const demoTeamMembers: TeamMember[] = [
+  {
+    id: "demo-chakib", initials: "CA", name: "Chakib A.", slug: "chakib-a",
+    role: "Co-fondateur · Développeur web",
+    bio: "Des interfaces rapides, des bases solides et une attention constante aux détails qui comptent.",
+    skills: ["Next.js", "Interfaces web", "Performance", "Intégration"],
+    contact: "kicoagency@siteprofree.email", location: "Algérie", availability: "Disponible pour nouveaux projets",
+    highlight: "Transforme les idées en produits web clairs, rapides et maintenables.",
+    published: true, sortOrder: 1, createdAt: now, updatedAt: now,
+  },
+  {
+    id: "demo-aymen", initials: "AB", name: "Aymen B.", slug: "aymen-b",
+    role: "Co-fondateur · Développeur web",
+    bio: "Un profil technique orienté performance, expérience utilisateur et livraison propre.",
+    skills: ["Développement front-end", "UX technique", "Optimisation", "Maintenance"],
+    contact: "kicoagency@siteprofree.email", location: "Algérie", availability: "Disponible pour nouveaux projets",
+    highlight: "Construit des expériences digitales sobres, utiles et efficaces.",
+    published: true, sortOrder: 2, createdAt: now, updatedAt: now,
+  },
+  {
+    id: "demo-salim", initials: "SG", name: "Salim G.", slug: "salim-g",
+    role: "Co-fondateur · Développeur web",
+    bio: "Des interfaces rapides, des détails propres et des idées qui fonctionnent vraiment.",
+    skills: ["Design system", "Développement web", "Qualité front-end", "Responsive"],
+    contact: "kicoagency@siteprofree.email", location: "Algérie", availability: "Disponible pour nouveaux projets",
+    highlight: "Soigne les détails d’interface et la cohérence de chaque parcours.",
+    published: true, sortOrder: 3, createdAt: now, updatedAt: now,
+  },
+  {
+    id: "demo-creative", initials: "KV", name: "L’équipe créative", slug: "equipe-creative",
+    role: "Design · Social media",
+    bio: "Une direction artistique claire et une culture du contenu pensée pour rendre chaque marque reconnaissable.",
+    skills: ["Direction artistique", "Branding", "Social media", "Templates"],
+    contact: "kicoagency@siteprofree.email", location: "Algérie", availability: "Sur demande",
+    highlight: "Crée des systèmes visuels cohérents pour donner une vraie présence aux marques.",
+    published: true, sortOrder: 4, createdAt: now, updatedAt: now,
   },
 ];

@@ -1,4 +1,5 @@
 import { Code2, PenTool, ArrowUpRight } from "lucide-react";
+import { ArrowLink } from "@/components/ui/arrow-link";
 
 const services = [
   { number: "01", icon: Code2, title: "Web development", intro: "Des sites qui chargent vite, racontent juste et convertissent mieux.", items: ["Landing pages", "Sites vitrines & portfolios", "Applications web sur mesure", "Responsive & performance"] },
@@ -9,7 +10,7 @@ export function Services() {
   return (
     <section id="services" className="section services-section">
       <div className="section-index light"><span>02</span><span>Nos expertises</span></div>
-      <div className="services-heading"><h2>Deux expertises.<br /><span>Une vision.</span></h2><p>Tout ce qu’il faut pour construire une présence digitale forte, cohérente et mémorable.</p></div>
+      <div className="services-heading"><h2>Deux expertises.<br /><span>Une vision.</span></h2><div><p>Tout ce qu’il faut pour construire une présence digitale forte, cohérente et mémorable.</p><ArrowLink href="/offres" variant="ghost">Voir les offres</ArrowLink></div></div>
       <div className="services-grid">
         {services.map((service) => { const Icon = service.icon; return (
           <article className="service-card" key={service.title}>

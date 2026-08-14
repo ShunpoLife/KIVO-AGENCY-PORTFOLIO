@@ -7,7 +7,7 @@ export function Hero() {
     <section className="hero">
       <div className="hero-orbit" aria-hidden="true"><span /><span /></div>
       <div className="hero-content">
-        <p className="eyebrow"><span className="status-dot" /> Studio digital · France</p>
+        <p className="eyebrow"><span className="status-dot" /> Studio digital · Algérie</p>
         <h1>On transforme<br />vos idées en <span className="gradient-text">impact.</span></h1>
         <div className="hero-bottom">
           <p>Nous concevons des expériences digitales singulières qui donnent aux marques une vraie place en ligne.</p>

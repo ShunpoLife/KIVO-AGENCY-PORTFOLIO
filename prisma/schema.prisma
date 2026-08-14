@@ -22,11 +22,55 @@ model Project {
   githubUrl        String?
   challenges       String?
   contribution     String?
+  memberId         String?
+  member           TeamMember? @relation(fields: [memberId], references: [id], onDelete: SetNull)
   completionDate   DateTime?
   featured         Boolean  @default(false)
   published        Boolean  @default(false)
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
+}
+
+model TeamMember {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  initials    String
+  role        String
+  bio         String
+  skills      String[]
+  contact     String?
+  location    String?
+  availability String?
+  highlight   String?
+  published   Boolean   @default(true)
+  sortOrder   Int       @default(0)
+  projects    Project[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Offer {
+  id           String   @id @default(cuid())
+  name         String
+  slug         String   @unique
+  eyebrow      String
+  summary      String
+  description  String
+  idealFor     String
+  useCase      String
+  outcome      String
+  timeline     String
+  startingPrice String?
+  cta          String
+  deliverables String[]
+  process      String[]
+  notIncluded  String[]
+  tags         String[]
+  published    Boolean  @default(true)
+  sortOrder    Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 }
 
 model Admin {

@@ -13,9 +13,29 @@ export type PortfolioProject = {
   githubUrl: string | null;
   challenges: string | null;
   contribution: string | null;
+  memberId?: string | null;
+  member?: TeamMember | null;
   completionDate: Date | null;
   featured: boolean;
   published: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+};
+
+export type TeamMember = {
+  id: string;
+  name: string;
+  slug: string;
+  initials: string;
+  role: string;
+  bio: string;
+  skills: string[];
+  contact: string | null;
+  location: string | null;
+  availability: string | null;
+  highlight: string | null;
+  published: boolean;
+  sortOrder: number;
   createdAt: Date;
   updatedAt: Date;
 };

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 
-const schema = z.object({ name: z.string().min(2).max(80), email: z.string().email(), company: z.string().max(100).optional(), message: z.string().min(20).max(3000), website: z.string().max(0).optional() });
+const schema = z.object({ name: z.string().min(2).max(80), email: z.string().email(), phone: z.string().max(40).optional(), company: z.string().max(100).optional(), offer: z.string().max(120).optional(), maintenance: z.string().max(20).optional(), timeline: z.string().max(120).optional(), message: z.string().min(20).max(3000), website: z.string().max(0).optional() });
 const attempts = new Map<string, number[]>();
 
 export async function POST(request: Request) {
